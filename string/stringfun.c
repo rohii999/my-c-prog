@@ -5,36 +5,47 @@ void main(){
     char str1[]="hello";
     char str2[]="hii";
     char *a;
+    int b,i;
 
-    a = strcat(str2,str1);
-    printf("result string %s",a);
-    // printf("enter the no which string fun u want:");
-    // scanf("%d",&a);
+
+
+    printf("enter the no which string fun u want:\n");
+     scanf("%d",&b);
     
-   /*   switch (a){
+    switch (b){
 
         case 1:
-        strcat(str2,str1);
+                 a = strcat(str2,str1);
+                 printf("result string %s\n",a);
         break;
 
         case 2:
-        strcpy(str2,str1);
+
+            a=strcpy(str2,str1);
+            printf("result string is %s\n",a);
+
         break;
 
         case 3:
-        strncpy(str2,str1,2);
+            a=strncpy(str2,str1,2);
+            printf("result string is %s\n",a);
+
         break;
 
         case 4:
-        strlen(str2);
+            i=strlen(str2);
+            printf("result string is %d\n",i);
+
         break;
 
         case 5:
-        strcmp(str1,str2);
+            i=strcmp(str1,str2);
+            printf("result string is %d\n",i);
+
         break;
 
         
 
-    }*/
-
+    }
+    
 }
