@@ -1,26 +1,25 @@
+
 #include<stdio.h>
-int main(){
 
+int main() {
+    char str[] = "Codekul";
+    int i = 0, j = 0, len = 0;
 
-    
-   char str[]="Codekul gurukul";
-    
-    int i = 0, counter = 0 , j=0, temp=0;
+    printf("Original string: %s\n", str);
 
-    printf("the original string is %s\n",str);
-    for(i = 0; str[i] != '\0'; i++) {
-        if (str[i] == 32) {
-            counter++;
-        }
-    }
-        ++counter;
-    printf("Number of words: %d\n", counter);
-
-    for(i=0,j=counter-1;i<j;i++,j--){
-        temp=str[i];
-        str[i]=str[j];
-        str[j]=temp;
+    for ( i = 0; str[i] != 0; i++) {
+        len++;
     }
 
-    printf("\nreverse word is %s\n",str);
+    for (i = 0, j = len-1; i < j; i++, j--) {
+        char temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+    }
+    
+    for(i=0;i<len;i++){
+    
+    }
+    printf("Reversed string: %s\n", str);
+    return 0;
 }
